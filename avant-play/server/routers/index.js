@@ -1,5 +1,5 @@
 import { Router } from "express";
-import usersRouters from "./UsersRouters.js";
+import usersRoutes from "./UsersRouters.js";
 
 const routes = Router();
 
@@ -7,7 +7,7 @@ routes.get('/', (req, res) =>{
     res.status(200).send("Página Inicial Avant Play")
 })
 
-routes.use('/users', usersRouters);
+routes.use('/users', usersRoutes);
 
 export default routes;
 

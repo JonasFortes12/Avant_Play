@@ -1,9 +1,13 @@
 import { Router } from 'express';
 import UsersController from '../controllers/UsersControllers.js';
 
-const usersRouters = Router();
+const usersRoutes = Router();
+
+usersRoutes.get('/list', UsersController.listUsers);
+usersRoutes.get('/:id', UsersController.showUser);
+usersRoutes.post('/create', UsersController.createUser);
+usersRoutes.put('/update', UsersController.updateUser);
+usersRoutes.delete('/delete/:id', UsersController.deleteUser);
 
 
-usersRouters.post('/create', UsersController.registerUser);
-
-export default usersRouters;
+export default usersRoutes;
