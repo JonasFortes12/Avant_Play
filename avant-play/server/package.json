@@ -10,6 +10,11 @@
   "author": "Jonas Fortes",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^5.0.0",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "mysql": "^2.18.1",
+    "prisma": "^5.0.0"
   }
 }
