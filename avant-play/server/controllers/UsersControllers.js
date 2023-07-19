@@ -5,11 +5,18 @@ const prisma = new PrismaClient();
 class UsersController {
 
     static listUsers = async(req, res) => {
-        res.status(200).send("Listar todos os usuários")
+        const allUsers = await prisma.user.findMany()
+        res.status(200).send(allUsers)
     }
 
     static showUser = async(req, res) => {
-        res.status(200).send("Mostra usuário por ID")
+        const userID = parseInt(req.params.id)
+        const userFound = await prisma.user.findUnique({
+            where: {
+              id: userID,
+            },
+          })
+        res.status(200).send(userFound)
     }
 
     static createUser = async (req, res) =>{
