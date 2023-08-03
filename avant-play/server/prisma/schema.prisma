@@ -11,10 +11,60 @@ datasource db {
 }
 
 //Model to user table on database
-model User {
-  id Int @id @default(autoincrement())
-  name String
-  email String @unique
-  password String
+// arquivo: schema.prisma
+
+model Usuario {
+  id_usuario     Int         @id @default(autoincrement())
+  email          String      @unique
+  nome           String
+  organizacao    Organizacao @relation(fields: [id_organizacao], references: [id_organizacao])
+  id_organizacao Int         @unique
+  pontuacao      Pontuacao?
+  planeta        Planeta     @relation(fields: [id_planeta], references: [id_planeta])
+  id_planeta     Int         @unique
+  rank String
+  dinheiro Int
 }
 
+model Gestor {
+  id_gestor      Int         @id @default(autoincrement())
+  nome           String
+  email          String      @unique
+  senha          String
+  organizacao    Organizacao @relation(fields: [id_organizacao], references: [id_organizacao])
+  id_organizacao Int         @unique
+}
+
+model Organizacao {
+  id_organizacao Int       @id @default(autoincrement())
+  nome           String
+  usuarios       Usuario[]
+  gestores       Gestor[]
+}
+
+model Pontuacao {
+  usuario    Usuario @relation(fields: [id_usuario], references: [id_usuario])
+  id_usuario Int     @id @unique
+  pontuacao  Int
+}
+
+model Planeta {
+  id_planeta Int       @id @default(autoincrement())
+  nome       String
+  descricao  String
+  usuarios   Usuario[]
+  fases      Fase[]
+}
+
+model Fase {
+  id_fase    Int     @id @default(autoincrement())
+  planeta    Planeta @relation(fields: [id_planeta], references: [id_planeta])
+  id_planeta Int     @unique
+}
+
+model Loja{
+  id_item Int @id @default(autoincrement())
+  nome String
+  descricao String
+  valor Int
+}
