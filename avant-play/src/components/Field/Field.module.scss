@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.field {
+  border-radius: 8px;
+  padding: 8px 16px;
+
+  width: 240px;
+
+  -webkit-box-shadow: 0px 4px 10px -5px rgba(33, 33, 33, 0.16);
+  -moz-box-shadow: 0px 4px 10px -5px rgba(33, 33, 33, 0.16);
+  box-shadow: 0px 4px 10px -5px rgba(33, 33, 33, 0.16);
+  
+  
+  input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  input::placeholder {
+    font-family: $font;
+    font-size: 16px;
+  }
+}
