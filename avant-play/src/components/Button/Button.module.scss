@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+
+input {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 700;
+}
