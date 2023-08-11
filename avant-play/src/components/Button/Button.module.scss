@@ -11,4 +11,10 @@ input {
     font-family: $font;
     font-size: 16px;
     font-weight: 700;
+    border-radius: 8px;
+    border: 0;
+}
+
+input:active {
+    background-color: $orange !important;
 }

@@ -14,7 +14,7 @@ function LoginForm() {
         <br/> <span>a proteger seus dados.</span>
       </p>
 
-      <Button value="Login" width="272px" bgcolor="#4C4CE8" />
+      <Button value="Entrar" width="272px" bgcolor="#4C4CE8" />
     </div>
   );
 }
