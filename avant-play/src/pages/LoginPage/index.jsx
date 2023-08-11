@@ -1,11 +1,16 @@
-import Button from "../../components/Button";
+import LoginForm from "../../components/LoginForm";
 import style from "./LoginPage.module.scss";
 
 function LoginPage() {
   return (
-    <>
-      <Button value="Login" width="272px" bgcolor="#4C4CE8" />
-    </>
+    <section className={style.sectionForm}>
+
+
+      <LoginForm/>
+
+
+
+    </section>
   );
 }
 
