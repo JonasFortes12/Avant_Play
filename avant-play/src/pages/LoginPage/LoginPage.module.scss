@@ -1,14 +1,26 @@
+@import "../../styles/variables";
 
-
-.sectionForm {
-
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
+    // margin: 40px 0;
+    
+    &__bgImage{
+        display: flex;
+        background-color: $lightBlue;
+        width: 25vw;
+        height: 100vh;
 
-    margin: 40px 0;
-
-
-
+       
+    }
+    
+    &__sectionForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75vw;
+        height: 100vh;
+    }
 
 }
