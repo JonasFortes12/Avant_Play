@@ -19,7 +19,7 @@ function LoginForm() {
       <Field placeholder={"E-mail"} />
       <Field placeholder={"Senha"} />
 
-      <Button value="Entrar" width="272px" bgcolor="#4C4CE8" />
+      <Button value="Entrar" width="272px"/>
 
       <div className={style.form__keepConected}>
         <input type="checkbox" name="newsletter" value="subscribe"></input>
@@ -27,13 +27,13 @@ function LoginForm() {
       </div>
 
       <div className={style.form__belowButtons}>
-        <Button value="Registrar-se" width="111px" bgcolor="#4C4CE8" />
-        <Button value="Esqueci a Senha" width="141px" bgcolor="#FF691A" />
+        <Button value="Registrar-se" width="111px" bgcolor="#FF691A" />
+        <Button value="Esqueci a Senha" width="141px"/>
       </div>
 
       <div className={style.form__areYouManager}>
         <label>Você é um gestor?</label>
-        <Button value="Entrar como gestor" width="272px" bgcolor="#4C4CE8" />
+        <Button value="Entrar como gestor" width="272px" bgcolor="#FF691A" />
       </div>
 
 
