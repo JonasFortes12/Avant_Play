@@ -59,7 +59,7 @@ function RegisterForm() {
 
       <div className={style.form__terms}>
         <input type="checkbox" name="newsletter" value="subscribe"></input>
-        <p>Concordo com os termos e condições</p>
+        <p>Concordo com os <a href="">termos e condições</a></p>
       </div>
 
       <Button value="Registrar-se" width="272px" bgcolor="#FF691A" />
