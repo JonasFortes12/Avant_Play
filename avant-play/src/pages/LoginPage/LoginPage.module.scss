@@ -23,4 +23,20 @@
         height: 100vh;
     }
 
+    @media screen and (max-width: 480px){
+        &__bgImage{
+            display: none;
+        }
+
+        &__sectionForm{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+    }
+    
+
 }
