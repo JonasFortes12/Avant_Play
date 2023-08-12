@@ -1,8 +1,8 @@
 import style from "./Field.module.scss";
 
-const Field = ({type = 'text', value, onChange, required, placeholder}) => {
+const Field = ({type = 'text', value, onChange, required, placeholder, width='240px'}) => {
   return (
-    <div className={style.field}>
+    <div className={style.field} style={{width: width}}>
 
       <input 
         type={type}
