@@ -1,0 +1,67 @@
+@import "../../styles/variables";
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin: 40px 0;
+    
+    &__bgImage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $opacBlue;
+        width: 25vw;
+        height: 100vh;
+
+        div{
+            margin-top: 60px;
+            width: 200px;
+            img{
+                width: 100%;
+            }
+        }
+
+       
+    }
+    
+    &__sectionForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75vw;
+        height: 100vh;
+    }
+
+}
+
+@media screen and (max-width: 769px){
+    .main {
+        flex-direction: column;
+    }
+
+
+    .main__bgImage{
+
+        width: 100vw;
+        height: 80vh;
+
+        
+        div{
+            width: 100px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .main__sectionForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+
+}
