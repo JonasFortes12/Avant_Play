@@ -9,7 +9,7 @@ function TypistText() {
     const typed = new Typed(el.current, {
       strings: [
         "Junte-se à comunidade Avant Play e embarque em uma jornada divertida de aprendizagem sobre LGPD",
-        "O Avant Play traz a combinação perfeita entre aprendizado e diversão. Cadastre-se agora e comece a jogar enquanto adquire conhecimentos sobre LGPD."
+        "A Avant Play traz a combinação perfeita entre aprendizado e diversão. Cadastre-se agora e comece a jogar enquanto adquire conhecimentos sobre LGPD."
       ], 
       startDelay: 500,
       typeSpeed: 50,
