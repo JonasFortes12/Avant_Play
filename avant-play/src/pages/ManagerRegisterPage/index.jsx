@@ -12,6 +12,7 @@ function ManagerRegisterPage() {
 
   return (
     <section className={style.main}>
+      
       <div className={style.main__bgImage}>
         <div>
           <img src={logo} alt="" />
