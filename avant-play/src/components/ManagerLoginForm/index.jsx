@@ -4,6 +4,7 @@ import logo from "../../assets/logo-gamificacao.png";
 import Field from "../Field";
 
 import { useState } from "react";
+import ManagerBadge from "../ManagerBadge";
 
 function ManagerLoginForm() {
   const [email, setEmail] = useState("");
@@ -14,6 +15,8 @@ function ManagerLoginForm() {
       <div className={style.form__img}>
         <img src={logo} alt="" />
       </div>
+
+      <ManagerBadge/>
 
       <p>
         Bem-vindo(a)! <br />

@@ -14,21 +14,21 @@ function RegisterForm() {
 
   return (
     <div className={style.form}>
-      <h3>CADASTRE-SE!</h3>
+      <h3>REGISTRE-SE!</h3>
 
       <div className={style.form__fields}>
         <Field
           value={name}
           placeholder={"Nome Completo"}
           onChange={(event) => setName(event.target.value)}
-          width="372px"
+          width="270px"
         />
 
         <Field
           value={email}
           placeholder={"E-mail"}
           onChange={(event) => setEmail(event.target.value)}
-          width="372px"
+          width="270px"
           
         />
 
@@ -37,7 +37,7 @@ function RegisterForm() {
           value={password}
           placeholder={"Senha"}
           onChange={(event) => setPassword(event.target.value)}
-          width="372px"
+          width="270px"
         />
 
         <Field
@@ -45,21 +45,21 @@ function RegisterForm() {
           value={passwordConfirm}
           placeholder={"Confirmação de Senha"}
           onChange={(event) => setPasswordConfirm(event.target.value)}
-          width="372px"
+          width="270px"
         />
 
         <Field
           value={organizationCode}
           placeholder={"Código da Organização"}
           onChange={(event) => setOrganizationCode(event.target.value)}
-          width="372px"
+          width="270px"
         />
 
       </div>
 
       <div className={style.form__terms}>
         <input type="checkbox" name="newsletter" value="subscribe"></input>
-        <p>Concordo com os <a href="">termos e condições</a></p>
+        <p>Concordo com os <a href="a">termos e condições</a></p>
       </div>
 
       <Button value="Registrar-se" width="272px" bgcolor="#FF691A" />

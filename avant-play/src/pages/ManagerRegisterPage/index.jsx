@@ -2,6 +2,7 @@ import style from "./ManagerRegisterPage.module.scss";
 import logo from "../../assets/logo-gamificacao.png";
 import TypistText from "../../components/TypistText";
 import ManagerRegisterForm from "../../components/ManagerRegisterForm";
+import ManagerBadge from "../../components/ManagerBadge";
 
 function ManagerRegisterPage() {
 
@@ -14,9 +15,15 @@ function ManagerRegisterPage() {
     <section className={style.main}>
       
       <div className={style.main__bgImage}>
-        <div>
+        
+        <div className={style.main__logo}>
           <img src={logo} alt="" />
         </div>
+
+        <div className={style.main__badge}>
+          <ManagerBadge/>
+        </div>
+
         <TypistText
           texts={typedTexts}
         />

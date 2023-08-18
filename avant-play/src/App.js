@@ -6,10 +6,10 @@ import RegisterPage from "./pages/RegisterPage";
 function App() {
   return (
     <>
-    {/* <LoginPage/> */}
+    <LoginPage/>
+    <RegisterPage/>
     <ManagerLoginPage/>
-    {/* <RegisterPage/> */}
-    {/* <ManagerRegisterPage/> */}
+    <ManagerRegisterPage/>
 
     </>
   );

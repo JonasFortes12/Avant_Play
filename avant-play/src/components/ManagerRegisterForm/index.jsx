@@ -16,35 +16,35 @@ function ManagerRegisterForm() {
 
   return (
     <div className={style.form}>
-      <h3>CADASTRE SUA ORGANIZAÇÃO!</h3>
+      <h3>REGISTRE SUA ORGANIZAÇÃO!</h3>
 
       <div className={style.form__fields}>
         <Field
           value={managerName}
           placeholder={"Nome do Gestor"}
           onChange={(event) => setManagerName(event.target.value)}
-          width="372px"
+          width="270px"
         />
 
         <Field
           value={responsibleManagerName}
           placeholder={"Nome do Gestor Responsável"}
           onChange={(event) => setResponsibleManagerName(event.target.value)}
-          width="372px"
+          width="270px"
         />
 
         <Field
           value={organizationName}
           placeholder={"Nome da Organização"}
           onChange={(event) => setOrganizationName(event.target.value)}
-          width="372px"
+          width="270px"
         />
 
         <Field
           value={CNPJ}
           placeholder={"CNPJ"}
           onChange={(event) => setCNPJ(event.target.value)}
-          width="372px"
+          width="270px"
         />
 
         <div className={style.form__fields__inputFile}>
@@ -57,7 +57,7 @@ function ManagerRegisterForm() {
           value={email}
           placeholder={"E-mail"}
           onChange={(event) => setEmail(event.target.value)}
-          width="372px"
+          width="270px"
         />
 
         <Field
@@ -65,7 +65,7 @@ function ManagerRegisterForm() {
           value={password}
           placeholder={"Senha"}
           onChange={(event) => setPassword(event.target.value)}
-          width="372px"
+          width="270px"
         />
 
         <Field
@@ -73,7 +73,7 @@ function ManagerRegisterForm() {
           value={passwordConfirm}
           placeholder={"Confirmação de Senha"}
           onChange={(event) => setPasswordConfirm(event.target.value)}
-          width="372px"
+          width="270px"
         />
       </div>
 

@@ -2,7 +2,7 @@ import RegisterForm from "../../components/RegisterForm";
 import style from "./RegisterPage.module.scss";
 import logo from "../../assets/logo-gamificacao.png";
 import TypistText from "../../components/TypistText";
-import { useState } from "react";
+
 
 function RegisterPage() {
 
